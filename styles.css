@@ -1,0 +1,237 @@
+/* === General resets and container === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Arial", sans-serif;
+    background: #fff;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* === Top Bar === */
+  .top-bar {
+    background: #003366; /* Navy blue */
+    color: white;
+    font-size: 0.9rem;
+    border-bottom: 2px solid #cc0000; /* Red underline */
+  }
+  
+  .top-bar .container ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+  }
+  
+  .top-bar .container ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  
+  .top-bar .container ul li a:hover,
+  .top-bar .container ul li a:focus {
+    color: #cc0000; /* red on hover */
+    text-decoration: underline;
+  }
+  
+  /* === Navbar === */
+  nav {
+    border-bottom: 4px solid #cc0000; /* thick red border */
+    background: white;
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+  
+  .logo img {
+    height: 50px;
+    -webkit-user-select: none; /* Safari/iOS */
+
+    user-select: none;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu li a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu li a:hover,
+  .menu li a:focus {
+    color: #cc0000;
+    text-decoration: underline;
+  }
+  
+  /* Dropdown arrow */
+  .arrow {
+    font-size: 0.7rem;
+    margin-left: 6px;
+  }
+  
+  /* Dropdown menu */
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    min-width: 160px;
+    display: none;
+    z-index: 10;
+  }
+  
+  .menu li:hover > .dropdown {
+    display: block;
+  }
+  
+  .dropdown li a {
+    padding: 10px 15px;
+    color: #003366;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+  
+  .dropdown li a:hover,
+  .dropdown li a:focus {
+    background-color: #f9f9f9;
+    color: #cc0000;
+    text-decoration: underline;
+  }
+  
+  /* Search bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 250px;
+  }
+  
+  .search-container input[type="text"] {
+    border: none;
+    padding: 7px 10px;
+    flex-grow: 1;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .search-container button {
+    background: #cc0000;
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  .search-container button:hover,
+  .search-container button:focus {
+    background: #990000;
+  }
+  
+  /* === Hamburger === */
+  .hamburger {
+    display: none;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #003366;
+    -webkit-user-select: none; /* Safari/iOS */
+
+    user-select: none;
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+      margin: 10px 20px;
+    }
+  
+    #nav-wrapper {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: white;
+    }
+  
+    #nav-wrapper.active {
+      display: flex;
+    }
+  
+    /* Top bar and menu stack vertically */
+    .top-bar .container ul,
+    .menu {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .top-bar .container ul li,
+    .menu li {
+      width: 100%;
+    }
+  
+    .top-bar .container ul li a,
+    .menu li a {
+      padding: 12px 20px;
+    }
+  
+    /* Dropdown on click */
+    .has-dropdown > ul.dropdown {
+      position: relative;
+      top: 0;
+      left: 0;
+      border: none;
+      box-shadow: none;
+      display: none;
+      padding-left: 15px;
+    }
+  
+    .has-dropdown.active > ul.dropdown {
+      display: block;
+    }
+  
+    /* Hide dropdown arrow on mobile or make it bigger */
+    .arrow {
+      margin-left: auto;
+      font-size: 1.2rem;
+    }
+  
+    /* Search bar full width */
+    .search-container {
+      width: 100%;
+      margin: 15px 0;
+    }
+  }
+  
