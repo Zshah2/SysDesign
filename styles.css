@@ -172,66 +172,86 @@
     user-select: none;
   }
   
-  /* === Responsive === */
-  @media (max-width: 768px) {
-    .hamburger {
-      display: block;
-      margin: 10px 20px;
-    }
-  
-    #nav-wrapper {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background: white;
-    }
-  
-    #nav-wrapper.active {
-      display: flex;
-    }
-  
-    /* Top bar and menu stack vertically */
-    .top-bar .container ul,
-    .menu {
-      flex-direction: column;
-      gap: 0;
-    }
-  
-    .top-bar .container ul li,
-    .menu li {
-      width: 100%;
-    }
-  
-    .top-bar .container ul li a,
-    .menu li a {
-      padding: 12px 20px;
-    }
-  
-    /* Dropdown on click */
-    .has-dropdown > ul.dropdown {
-      position: relative;
-      top: 0;
-      left: 0;
-      border: none;
-      box-shadow: none;
-      display: none;
-      padding-left: 15px;
-    }
-  
-    .has-dropdown.active > ul.dropdown {
-      display: block;
-    }
-  
-    /* Hide dropdown arrow on mobile or make it bigger */
-    .arrow {
-      margin-left: auto;
-      font-size: 1.2rem;
-    }
-  
-    /* Search bar full width */
-    .search-container {
-      width: 100%;
-      margin: 15px 0;
-    }
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin: 10px 20px;
+    font-size: 2rem;
+    color: white;
+    background: #004225; /* match green header background */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
   }
-  
+
+  /* Mobile nav wrapper slides down */
+  #nav-wrapper {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #f5f5f5;
+    border-top: 2px solid #003366;
+  }
+
+  #nav-wrapper.active {
+    display: flex;
+  }
+
+  /* Menu full width stacked */
+  .menu {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+  }
+
+  .menu li {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+  }
+
+  .menu li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: #003366;
+  }
+
+  /* Dropdown hidden by default */
+  .has-dropdown > ul.dropdown {
+    display: none;
+    background: #fff;
+    padding-left: 10px;
+    border-left: 3px solid #003366;
+  }
+
+  /* Show dropdown when parent is active */
+  .has-dropdown.active > ul.dropdown {
+    display: block;
+  }
+
+  .dropdown li a {
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    color: #333;
+  }
+
+  /* Arrow styling */
+  .arrow {
+    margin-left: auto;
+    font-size: 1.2rem;
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+  }
+
+  .has-dropdown.active .arrow {
+    transform: rotate(90deg); /* rotate when expanded */
+  }
+
+  /* Search bar takes full width */
+  .search-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
