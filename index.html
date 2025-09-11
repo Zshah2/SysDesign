@@ -8,50 +8,63 @@
 </head>
 <body>
 
-  <!-- Hamburger button -->
-  <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
-    ☰
-  </button>
-
-  <!-- Sidebar drawer -->
-  <nav id="nav-wrapper">
-    <div class="nav-header">
-      <span>Menu</span>
-      <button id="close-nav" aria-label="Close menu">✕</button>
+  <div id="nav-wrapper">
+    <div class="top-bar">
+      <div class="container">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Give</a></li>
+          <li><a href="#">Alumni</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Online Tools</a></li>
+          <li><a href="#">ConnectOW</a></li>
+        </ul>
+      </div>
     </div>
 
-    <ul class="menu">
-      <li class="has-dropdown">
-        <a href="#">Why Old Westbury? <span class="arrow">▶</span></a>
-        <ul class="dropdown">
-          <li><a href="#">About Campus</a></li>
-          <li><a href="#">History</a></li>
-          <li><a href="#">Mission</a></li>
+    <nav>
+      <div class="container nav-container">
+        <div class="logo">
+          <img src="logo.png" alt="SUNY Old Westbury Logo" />
+        </div>
+
+        <ul class="menu" id="menu">
+          <li class="has-dropdown">
+            <a href="#">Why Old Westbury? <span class="arrow">&#x25BE;</span></a>
+            <ul class="dropdown">
+              <li><a href="#">About Campus</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Mission</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Programs & Courses <span class="arrow">&#x25BE;</span></a>
+            <ul class="dropdown">
+              <li><a href="#">Undergraduate</a></li>
+              <li><a href="#">Graduate</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Admissions <span class="arrow">&#x25BE;</span></a>
+            <ul class="dropdown">
+              <li><a href="#">Apply</a></li>
+              <li><a href="#">Visit</a></li>
+            </ul>
+          </li>
         </ul>
-      </li>
-      <li class="has-dropdown">
-        <a href="#">Programs & Courses <span class="arrow">▶</span></a>
-        <ul class="dropdown">
-          <li><a href="#">Undergraduate</a></li>
-          <li><a href="#">Graduate</a></li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <a href="#">Admissions <span class="arrow">▶</span></a>
-        <ul class="dropdown">
-          <li><a href="#">Apply</a></li>
-          <li><a href="#">Visit</a></li>
-        </ul>
-      </li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Give</a></li>
-      <li><a href="#">Alumni</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Policies</a></li>
-      <li><a href="#">Online Tools</a></li>
-      <li><a href="#">ConnectOW</a></li>
-    </ul>
-  </nav>
+
+        <div class="search-container">
+          <input type="text" placeholder="Search" aria-label="Search input" />
+          <button type="submit" aria-label="Search">
+            🔍
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
 
   <script src="script.js"></script>
 </body>
