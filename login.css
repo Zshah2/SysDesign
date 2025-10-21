@@ -1,0 +1,146 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0055a5, #00aaff);
+}
+
+/* Smaller Login Container */
+.login-container {
+  background: #fff;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 320px;  /* Reduced from 400px */
+  padding: 35px 25px;  /* Reduced from 50px 40px */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative Circles */
+.login-container::before,
+.login-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 85, 165, 0.1);
+}
+
+.login-container::before {
+  width: 150px;  /* Reduced from 200px */
+  height: 150px;
+  top: -40px;
+  right: -40px;
+}
+
+.login-container::after {
+  width: 100px;  /* Reduced from 150px */
+  height: 100px;
+  bottom: -30px;
+  left: -20px;
+  background: rgba(0, 170, 255, 0.1);
+}
+
+/* Logo & Headings */
+.logo {
+  width: 80px;  /* Reduced from 100px */
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 24px;  /* Reduced from 28px */
+  color: #00274d;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  font-size: 13px;  /* Reduced from 14px */
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;  /* Reduced from 15px */
+}
+
+input {
+  padding: 10px;  /* Reduced from 12px */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: #0055a5;
+  box-shadow: 0 0 8px rgba(0,85,165,0.3);
+  outline: none;
+}
+
+button {
+  padding: 12px;  /* Reduced from 14px */
+  background: #0055a5;
+  color: #fff;
+  font-size: 15px;  /* Reduced from 16px */
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #003f7f;
+  transform: translateY(-2px);
+}
+
+/* Links & Text */
+.forgot {
+  text-align: right;
+  font-size: 11px;  /* Reduced from 12px */
+}
+
+.forgot a {
+  color: #0055a5;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+.warning {
+  font-size: 11px;  /* Reduced from 12px */
+  color: #b00;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.footer-text {
+  font-size: 9px;  /* Reduced from 10px */
+  color: #555;
+  text-align: left;
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  .login-container {
+    padding: 30px 20px;
+  }
+}

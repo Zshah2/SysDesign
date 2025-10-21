@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boolean University Login</title>
+  <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="images/boolean.png" alt="Boolean University Logo" class="logo">
+    <h1>Boolean University</h1>
+    <p class="subtext">Sign in to your account</p>
+
+    <form action="login.php" method="POST">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+      <p class="forgot"><a href="#">Forgot your password?</a></p>
+
+      <p class="warning">Attention: Using email address as the username will result in a failed authentication.</p>
+
+      <button type="submit">Sign In</button>
+    </form>
+
+    <p class="footer-text">
+      This service and the services to which it provides access are for authorized use only. Any attempt to gain unauthorized access, or exceed authorized access, to the Boolean University resources will be pursued under campus codes and state or federal law.
+    </p>
+  </div>
+</body>
+</html>

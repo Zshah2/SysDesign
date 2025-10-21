@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Graduate Programs | Boolean University</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div id="nav-wrapper">
+    <div class="top-bar">
+      <div class="container">
+        <ul>
+           <li><a href="/About.html">About Campus</a></li>
+          <li><a href="#">Give</a></li>
+          <li><a href="#">Alumni</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Online Tools</a></li>
+          <li><a href="#">ConnectOW</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav>
+      <div class="container nav-container">
+        <div class="logo">
+          🎓 Boolean University
+        </div>
+
+        <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+
+        <ul class="menu" id="menu">
+          <li class="has-dropdown">
+            <a href="#">Why Old Westbury? <span class="arrow">&#x25BE;</span></a>
+            <ul class="dropdown">
+               <li><a href="/About.html">About Campus</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Mission</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Programs & Courses <span class="arrow">&#x25BE;</span></a>
+            <ul class="dropdown">
+              <li><a href="/undergrad.html">Undergraduate</a></li>
+              <li><a href="/graduate.html">Graduate</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">Admissions <span class="arrow">&#x25BE;</span></a>
+            <ul class="dropdown">
+              <li><a href="#">Apply</a></li>
+              <li><a href="#">Visit</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="search-container">
+          <input type="text" placeholder="Search" aria-label="Search input" />
+          <button type="submit" aria-label="Search">🔍</button>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="filter-container">
+      <div class="filter-title">Graduate Programs & Credentials</div>
+      <div class="filter-group">
+        <select id="degree-type">
+          <option>- Any -</option>
+          <option>Master of Arts (M.A.)</option>
+          <option>Master of Arts in Teaching (M.A.T.)</option>
+          <option>Master of Science (M.S.)</option>
+          <option>5-Year Bachelor/Master</option>
+          <option>3+3 Bachelor/Juris Doctor</option>
+          <option>7-Year Dual-Degree Medical</option>
+          <option>Certificate</option>
+          <option>Micro Credentials</option>
+          <option>Minor</option>
+        </select>
+
+        <select id="school">
+          <option>- Any -</option>
+          <option>School of Business</option>
+          <option>School of Education</option>
+          <option>School of Arts and Sciences</option>
+        </select>
+
+        <button class="apply-btn">Apply</button>
+        <button class="reset-btn">Reset</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Graduate Programs -->
+  <section class="program-list">
+    
+    <div class="program-category">
+      <h2>Master of Arts</h2>
+      <ul class="programs">
+        <li>Liberal Studies, M.A.</li>
+      </ul>
+    </div>
+
+    <div class="program-category">
+      <h2>Master of Arts in Teaching</h2>
+      <ul class="programs">
+        <li>Adolescence Education: Biology (7-12), M.A.T.</li>
+        <li>Adolescence Education: English Language Arts (7-12), M.A.T.</li>
+        <li>Adolescence Education: Mathematics (7-12), M.A.T.</li>
+        <li>Adolescence Education: Social Studies (7-12), M.A.T.</li>
+        <li>Adolescence Education: Spanish (7-12), M.A.T.</li>
+      </ul>
+    </div>
+
+    <div class="program-category">
+      <h2>Master of Science</h2>
+      <ul class="programs">
+        <li>Accounting, M.S.</li>
+        <li>Data Science Master's Degree</li>
+        <li>Forensic Accounting</li>
+        <li>Healthcare Management, M.S.</li>
+        <li>Literacy Education, M.S.</li>
+        <li>Mental Health Counseling, M.S.</li>
+        <li>Special Education, M.S.</li>
+        <li>Taxation, M.S.</li>
+        <li>The Online M.S. in Accounting</li>
+      </ul>
+    </div>
+
+    <div class="program-category">
+      <h2>5-Year Bachelor of Arts/Master of Arts</h2>
+      <ul class="programs">
+        <li>B.A./M.A. in American Studies/Liberal Studies</li>
+        <li>B.A./M.A. in English/Liberal Studies</li>
+        <li>B.A./M.A. in History/Liberal Studies</li>
+        <li>B.A./M.A. in Politics, Economics, & Law/Liberal Studies</li>
+      </ul>
+    </div>
+
+    <div class="program-category">
+      <h2>5-Year Bachelor of Science/Master of Science</h2>
+      <ul class="programs">
+        <li>B.S./M.S. in Accounting</li>
+        <li>B.S./M.S. in Taxation</li>
+      </ul>
+    </div>
+
+    <div class="program-category">
+      <h2>3+3 Bachelor of Arts/Juris Doctor</h2>
+      <ul class="programs">
+        <li>3+3 Combined Pathways – B.A. and J.D.</li>
+      </ul>
+    </div>
+
+    <div class="program-category">
+      <h2>7-Year Dual-Degree Medical Programs</h2>
+      <ul class="programs">
+        <li>3+4 BS/DPM New York College of Podiatric Medicine Program</li>
+        <li>Biochemistry & Doctor of Osteopathic Medicine, B.S./D.O.</li>
+        <li>Biological Sciences & Doctor of Osteopathic Medicine, B.S./D.O.</li>
+      </ul>
+    </div>
+
+    <div class="program-category">
+      <h2>Certificate</h2>
+      <ul class="programs">
+        <li>Advanced Certificate in Taxation</li>
+        <li>Advanced Certificate Programs in Adolescence Education (7-12)</li>
+      </ul>
+    </div>
+
+    <div class="program-category">
+      <h2>Micro Credentials</h2>
+      <ul class="programs">
+        <li>Advanced TV/Video Production Microcredential</li>
+        <li>Business Taxation Microcredential</li>
+        <li>Diversity, Equity, Inclusion, and Justice in the Workplace Microcredential</li>
+        <li>Estate, Gift & Trust Taxation Microcredential</li>
+        <li>Foundational Counseling Skills Microcredential</li>
+        <li>Foundations in Applied Behavior Change Microcredential</li>
+        <li>Foundations of Creative Writing Microcredential</li>
+        <li>Foundations of Forensic Accounting Microcredential</li>
+        <li>Foundations of Neuropsychopharmacology Microcredential</li>
+        <li>Foundations of Nonprofit Management Microcredential</li>
+        <li>Foundations of Spanish Translation Microcredential</li>
+        <li>Fundamentals of Non-Fiction Video Production Microcredential</li>
+        <li>Fundamentals of Television News Production Microcredential</li>
+        <li>Professional Skills for the Workplace Microcredential</li>
+        <li>The Foundations of Cognitive Neuropsychology Microcredential</li>
+        <li>Workplace Communication and Information Technology Microcredential</li>
+      </ul>
+    </div>
+
+    <div class="program-category">
+      <h2>Minor</h2>
+      <ul class="programs">
+        <li>Accounting Minor</li>
+        <li>African American Studies Minor</li>
+        <li>Applied Mathematics Minor</li>
+        <li>Chemistry Minor</li>
+        <li>Community Action Psychology</li>
+        <li>Computer and Information Sciences Minor</li>
+        <li>Congregational Leadership Minor</li>
+        <li>Consumer Psychology, Minor</li>
+        <li>Digital Design Marketing Minor</li>
+        <li>Economics Minor</li>
+        <li>Entertainment and Sports Management Minor</li>
+        <li>Environmental Studies Minor</li>
+        <li>French Studies Minor</li>
+        <li>General Business Minor</li>
+        <li>Global Studies Minor</li>
+        <li>Hispanic Cultural Studies Minor</li>
+        <li>Industrial and Labor Relations Minor</li>
+        <li>Islamic Studies Minor</li>
+        <li>Italian Cultural Studies Minor</li>
+        <li>Marketing Minor</li>
+        <li>Mathematics Minor</li>
+        <li>Media and Communications Minor</li>
+        <li>Media Design Minor</li>
+        <li>Multicultural US/British Literature Minor</li>
+        <li>Neuropsychology Minor</li>
+        <li>Philosophy and Religion Minor</li>
+        <li>Physics Minor</li>
+        <li>Pre Health Professions Minor</li>
+        <li>Pre-Law Studies Minor</li>
+        <li>Psychology Minor</li>
+        <li>Public Health Minor</li>
+        <li>Public Policy Minor</li>
+        <li>Social Work Minor</li>
+        <li>Spanish Minor</li>
+        <li>Visual Arts Minor</li>
+        <li>Women & Gender Studies Minor</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer id="site-footer">
+    <div class="container footer-container">
+      <div class="footer-section">
+        <h3>About Boolean University</h3>
+        <p>Empowering students with knowledge and skills to thrive in a just and sustainable world.</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Admissions</a></li>
+          <li><a href="#">Programs & Courses</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Alumni</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Boolean University. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="filter2.js"></script>
+
+</body>
+</html>

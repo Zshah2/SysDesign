@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Boolean University</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -15,13 +15,13 @@
     <div class="top-bar">
       <div class="container">
         <ul>
-          <li><a href="#">About Us</a></li>
+          <li><a href="/About.html">About Us</a></li>
           <li><a href="#">Give</a></li>
           <li><a href="#">Alumni</a></li>
           <li><a href="#">News</a></li>
           <li><a href="#">Policies</a></li>
           <li><a href="#">Online Tools</a></li>
-          <li><a href="#">ConnectOW</a></li>
+          <li><a href="Login.html">Login</a></li>
         </ul>
       </div>
     </div>
@@ -30,7 +30,7 @@
     <nav>
       <div class="container nav-container">
         <div class="logo">
-          <img src="boolean.png" alt="SUNY Old Westbury Logo" />
+          <img src="images/boolean.png" alt="SUNY Old Westbury Logo" />
         </div>
 
         <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
@@ -39,7 +39,7 @@
           <li class="has-dropdown">
             <a href="#">Why Old Westbury? <span class="arrow">&#x25BE;</span></a>
             <ul class="dropdown">
-              <li><a href="#">About Campus</a></li>
+              <li><a href="/About.html">About Campus</a></li>
               <li><a href="#">History</a></li>
               <li><a href="#">Mission</a></li>
             </ul>
@@ -47,8 +47,8 @@
           <li class="has-dropdown">
             <a href="#">Programs & Courses <span class="arrow">&#x25BE;</span></a>
             <ul class="dropdown">
-              <li><a href="#">Undergraduate</a></li>
-              <li><a href="#">Graduate</a></li>
+              <li><a href="/undergrad.html">Undergraduate</a></li>
+              <li><a href="/Graduate.html">Graduate</a></li>
             </ul>
           </li>
           <li class="has-dropdown">
@@ -73,7 +73,7 @@
 <br>
  <section id="homepage-hero" class="container">
     <div class="hero-wrapper">
-      <img src="school.png" alt="Students on campus" />
+      <img src="images/school.png" alt="Students on campus" />
       <div class="hero-content">
         <h1>Own Your Future</h1>
         <p>This is a university where students with a passion for learning are empowered through excellence to thrive in a more just, sustainable world.</p>
@@ -93,28 +93,60 @@
         
         <!-- Link 1 -->
         <div class="link-item">
-          <i class="fas fa-user-plus fa-3x" style="margin-bottom: 5px;"></i>
+          <i class="fas fa-user-plus fa-3x" style="margin-bottom: 5px; color: #003366;"></i>
           <a href="https://www.oldwestbury.edu/how-apply" class="find-major">Apply Now!</a>
         </div>
     
         <!-- Link 2 -->
         <div class="link-item">
-          <i class="fas fa-book-open fa-3x" style="margin-bottom: 5px;"></i>
+          <i class="fas fa-book-open fa-3x" style="margin-bottom: 5px; color: #003366;"></i>
           <a href="https://www.oldwestbury.edu/programs-courses" class="find-major">Our Program</a>
         </div>
     
         <!-- Link 3 -->
         <div class="link-item">
-          <i class="fas fa-map-marker-alt fa-3x" style="margin-bottom: 5px;"></i>
+          <i class="fas fa-map-marker-alt fa-3x" style="margin-bottom: 5px; color: #003366;"></i>
           <a href="https://www.oldwestbury.edu/why-old-westbury/visit-old-westbury" class="find-major">Visit Campus</a>
         </div>
     
       </div>
     </section>
+
+
+<!-- Project Cards Section -->
+<section class="projects-section">
     
-
-
-
+    <div class="projects-container">
+        <!-- Pan Q Pride Homecoming Card -->
+        <div class="project-card">
+       <img src="images/Alumni.png" alt="Students on campus" class="card-image"/>
+            <div class="card-content">
+              
+                <h3 class="card-title">Boolean Pride Homecoming</h3>
+                <p class="card-year">2025</p>
+                <p class="card-description">
+                    Alumni, students, faculty, staff and friends are invited to campus and
+                    to show the "Panther Pride" you have in our institution!
+                </p>
+                <a href="#" class="card-button">Learn More and Register</a>
+            </div>
+        </div>
+        
+        <!-- Second Project Card -->
+        <div class="project-card">
+          <img src="images/Open_House.png" alt="Students on campus" class="card-image"/>
+            <div class="card-content">
+                <h3 class="card-title">Undergraduate Open House</h3>
+                <p class="card-year"><em>Saturday, December 6, 2025, 10 a.m.</em></p>
+                <p class="card-description">
+                    <em>Tour campus, meet our team, and get ready to Own Your Future.</em>
+                      Register today for our Undergraduate Admissions Open House.
+                </p>
+                <a href="#" class="card-button">Register now</a>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!-- Footer -->
@@ -154,13 +186,6 @@
     <p>&copy; 2025 Boolean University. All rights reserved.</p>
   </div>
 </footer>
-
-
-
-
-
-
-
 
   
   <script src="script.js"></script>

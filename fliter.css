@@ -1,0 +1,76 @@
+/* Filter Bar Section */
+.filter-section {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+.filter-container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.filter-title {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 200px;
+  font-size: 1rem;
+  outline: none;
+}
+
+select:focus {
+  border-color: #003366;
+}
+
+.apply-btn {
+  background-color: #004b23;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #007f3d;
+}
+
+.reset-btn {
+  background-color: #666;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: #888;
+}
